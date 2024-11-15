@@ -1,12 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Themed Webpage</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Body Styling */
+        body {
+            background-color: #121212;
+            color: #d1d5db;
+            font-family: "Courier New", Courier, monospace;
+            line-height: 1.6;
+        }
+        
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
- <head>
- <title>MTH4000 exercise</title>
+        /* Header */
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #00d8ff;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #a1a1a1;
+        }
+
+        /* Navigation */
+        nav {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #00d8ff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2rem;
+        }
+
+        nav a:hover {
+            color: #00ff9d;
+        }
+
+        /* Section */
+        section {
+            margin: 40px 0;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: #00ff9d;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            color: #c3c4c7;
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        /* Code Block */
+        .code {
+            background-color: #1e1e1e;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: "Courier New", Courier, monospace;
+            color: #ffcb6b;
+            margin: 20px 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            color: #a1a1a1;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            nav a {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
+<body>
+    <!-- Container for page content -->
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Welcome to My Computer Science Page</h1>
+            <p>A journey through programming, algorithms, and tech insights.</p>
+        </header>
 
- <body>
-    This is the task for week 8 quiz for this module.
+        <!-- Navigation Links -->
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm a computer science enthusiast with a passion for coding, algorithms, and learning about the latest in tech. This page showcases some of my favorite projects and topics in computer science.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Here are some projects that I have worked on recently:</p>
+            <div class="code">
+                <pre>
+                // Sample code snippet
+                function sayHello() {
+                    console.log("Hello, world!");
+                }
+                sayHello();
+                </pre>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you'd like to reach out, please connect with me via GitHub or LinkedIn!</p>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            &copy; 2023 Your Name | Computer Science Enthusiast
+        </footer>
+    </div>
 </body>
-
 </html>
